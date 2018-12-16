@@ -3,30 +3,35 @@
 ## Bash Script
 
 ### printf
-```
+
+```text
 printf "%s : %d" Ali 14
 printf "%10s" sample
 printf "%.2f" 13.2345
 ```
 
 ### Variables
-```
+
+```text
 var1=123
 name=mohammad
 printf "%s : %d" $name $var1
 ```
-- Don't use space
-- Case sensitive
+
+* Don't use space
+* Case sensitive
 
 ### Enviornment Variables
-- در این اسکریپت و بچه هایش ولید است.
 
-```
+* در این اسکریپت و بچه هایش ولید است.
+
+```text
 export var2=sag
 ```
 
 ### Math Calculation
-```
+
+```text
 echo $[$num1+$num2]
 echo $[2+4]
 
@@ -35,23 +40,28 @@ echo $(($num1+$NUM2))
 let num3=$num1+$num2
 echo $num3
 ```
-- `$num1+$num2` is concatination
+
+* `$num1+$num2` is concatination
 
 ### Exit
-```
+
+```text
 exit
 
 exit 0
 ```
-- `$?` is exit value
-```
-./script.sh && echo 'true' || echo 'false' #if script return 0 then write true, else write false
-```
+
+* `$?` is exit value
+
+  ```text
+  ./script.sh && echo 'true' || echo 'false' #if script return 0 then write true, else write false
+  ```
 
 ### Conditions
 
 #### Test
-```
+
+```text
 [ 2 = 1 ]
 
 [ 2 = 1 ] && echo 'true' || echo 'false'
@@ -60,7 +70,7 @@ exit 0
 [ $var1 != $var2 ] && echo 'true' || echo 'false'
 ```
 
-```
+```text
 var1=12
 var2=12
 
@@ -74,31 +84,37 @@ var2=12
 str1=ali
 [ -n $str1 ] # non-zero
 ```
-- `man test` is usefull
-- diffrent for `integer` and `string`
+
+* `man test` is usefull
+* diffrent for `integer` and `string`
 
 #### if
-```
+
+```text
 if [ $var1 -eq $var2 ]
 then
-	echo 'equal'
+    echo 'equal'
 else
-	echo 'not equal'
+    echo 'not equal'
 fi
 ```
-- we can use `elif-then` statement
+
+* we can use `elif-then` statement
 
 #### case
-```
+
+```text
 case $num4 in
-	20)
-		echo '20';;
-	21)
-		echo '21';;
-	23|24)
-		echo '23 or 24';;
-	*) #default
-		echo 'else';;
+    20)
+        echo '20';;
+    21)
+        echo '21';;
+    23|24)
+        echo '23 or 24';;
+    *) #default
+        echo 'else';;
 esac
 ```
-- `;;` is break
+
+* `;;` is break
+
