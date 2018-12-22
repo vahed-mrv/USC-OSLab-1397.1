@@ -77,7 +77,7 @@ echo ${STR:2:1}
 
 ## System Programming
 
-![Dars-Lesson5](https://github.com/vahed-mrv/USC-OSLab-1397.1/blob/master/Dars-Lesson5.jpg)
+![Dars-Lesson5](Dars-Lesson5.jpg)
 
 ### System Call
 
